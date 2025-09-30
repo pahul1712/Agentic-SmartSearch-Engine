@@ -6,6 +6,24 @@
 
 ---
 
+## 📂 Project Structure
+
+```
+│
+├── app.py # 🎯 Main Streamlit app – runs the LLM search engine
+├── requirements.txt # 📦 Python dependencies
+├── .gitignore # 🚫 Files & folders to ignore in Git
+├── README.md # 📘 Project documentation
+├── tools_agents.ipynb # 📓 Jupyter Notebook – shows how tools & agents are built
+│
+├── images/ # 🖼️ Project assets & demo screenshots
+│ └── demo1.png # Demo image used in the README
+│
+└── .env (optional) # 🔑 Your API keys (not uploaded to GitHub)
+```
+
+---
+
 ## ✨ What It Does
 
 - 🧠 **Agentic Reasoning:** Uses [LangChain Agents](https://docs.langchain.com/) to decide which search tool to call.
