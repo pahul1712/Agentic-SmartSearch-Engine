@@ -3,6 +3,7 @@
 > **A Streamlit-based intelligent search assistant** that combines **LLM reasoning** with curated external tools (DuckDuckGo, Arxiv, Wikipedia) to give you smart, up-to-date answers.
 
 
+## 🖥️ Demo
 
 ![Demo](images/demo1.png)
 
