@@ -38,3 +38,32 @@ git clone https://github.com/your-username/Agentic-SmartSearch-Engine.git
 cd Agentic-SmartSearch-Engine
 ```
 
+2. **Create & activate a virtual environment (Mac / Linux)**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the app
+   ```bash
+   streamlit run app.py
+   ```
+
+---
+
+## 🖥️ Usage
+
+- Type a question such as:
+  - "Summarize the latest Arxiv papers on reinforcement learning"
+  - "Who won the Nobel Prize in Physics 2024?"
+- The agent decides whether to search web, Arxiv, or Wikipedia, then streams the answer back.
+
+---
+
+## 📓 Notebook Included
+
+- tools_agents.ipynb — A Jupyter notebook showcasing how each tool & agent works before being integrated into the app.
