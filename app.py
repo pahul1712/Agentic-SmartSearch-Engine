@@ -22,7 +22,11 @@ wiki = WikipediaQueryRun(api_wrapper=api_wrapper_wiki)
 
 search = DuckDuckGoSearchRun(
     name="Search",
-    api_wrapper=DuckDuckGoSearchAPIWrapper(backend="html")
+    api_wrapper=DuckDuckGoSearchAPIWrapper(
+        backend="html",     
+        max_results=5,
+        safesearch="moderate"
+    )
 )
 
 
