@@ -6,6 +6,7 @@ from langchain.agents import create_react_agent
 from langchain.agents import AgentExecutor
 from langchain.tools.render import render_text_description
 from langchain.callbacks import StreamlitCallbackHandler
+from langchain_community.utilities import DuckDuckGoSearchAPIWrapper
 from langchain import hub
 from dotenv import load_dotenv
 import os
@@ -19,7 +20,11 @@ arxiv = ArxivQueryRun(api_wrapper=api_wrapper_arxiv)
 api_wrapper_wiki = WikipediaAPIWrapper(top_k_results=1, doc_content_chars_max=250)
 wiki = WikipediaQueryRun(api_wrapper=api_wrapper_wiki)
 
-search = DuckDuckGoSearchRun(name="Search")
+search = DuckDuckGoSearchRun(
+    name="Search",
+    api_wrapper=DuckDuckGoSearchAPIWrapper(backend="html")
+)
+
 
 # Streamlit UI
 st.title("🔍 Agentic SmartSearch Engine")
