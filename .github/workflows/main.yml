@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://pahul1712:$HF_TOKEN@huggingface.co/spaces/pahul1712/Agentic-SmartSearch-Engine main
+        run: git push --force https://pahul1712:$HF_TOKEN@huggingface.co/spaces/pahul1712/Agentic-SmartSearch-Engine main
