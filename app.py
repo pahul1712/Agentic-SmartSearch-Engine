@@ -45,7 +45,7 @@ if prompt := st.chat_input(placeholder="Ask anything (e.g. 'Find latest paper on
     # Create a modern ReAct Agent
     prompt_template = hub.pull("hwchase17/react")  # pulls default reasoning + acting prompt
     agent = create_react_agent(llm, tools, prompt_template)
-    agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+    agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True, handle_parsing_errors=True)
 
     with st.chat_message("assistant"):
         st_cb = StreamlitCallbackHandler(st.container(), expand_new_thoughts=False)
