@@ -11,7 +11,7 @@ from langchain import hub
 from dotenv import load_dotenv
 import os
 
-# load_dotenv()
+### load_dotenv()
 
 # Arxiv and Wikipedia Tools
 api_wrapper_arxiv = ArxivAPIWrapper(top_k_results=1, doc_content_chars_max=250)
