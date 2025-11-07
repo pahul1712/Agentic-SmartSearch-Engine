@@ -1,7 +1,7 @@
 langchain-openai
-langchain
+langchain==0.0.340
 python-dotenv
-langchain_community
+langchain-community==0.0.23
 langchain_core
 streamlit
 ipykernel
