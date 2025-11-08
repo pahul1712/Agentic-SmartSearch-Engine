@@ -6,7 +6,7 @@
 
 ## 🖥️ Demo
 
-![Demo](images/demo1.png)
+
 
 ---
 
